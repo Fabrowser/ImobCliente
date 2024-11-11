@@ -1,0 +1,56 @@
+﻿@model Controle_Imob_Clientes.Models.Imobiliaria
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_LayoutImobClientes.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Imobiliaria</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Endereco)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Endereco)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Telefone)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Telefone)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Responsavel)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Responsavel)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PaginaWeb)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PaginaWeb)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PerfilInstagram)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PerfilInstagram)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.imobiliariaID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+
