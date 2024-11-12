@@ -16,8 +16,6 @@ namespace Controle_Imob_Clientes.Areas.Administradores.Controllers
 
         private ImobClienteContext _context;
 
-
-
         public AdministradorController(ImobClienteContext context)
         {
             _context = context;
