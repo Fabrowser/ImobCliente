@@ -17,6 +17,7 @@ namespace Controle_Imob_Clientes.Areas.Cadastros.Controllers
 
         private ImobClienteContext _context;
 
+
         public ClienteController(ImobClienteContext context)
         {
             _context = context;
