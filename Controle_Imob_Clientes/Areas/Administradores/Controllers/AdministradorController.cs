@@ -22,8 +22,6 @@ namespace Controle_Imob_Clientes.Areas.Administradores.Controllers
         }
 
 
-
-
         public IQueryable<Administrador> ObterAdministradoresClassificadosPorNome()
         {
             return _context.Administradores.OrderBy(b => b.Nome);
