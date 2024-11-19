@@ -32,7 +32,8 @@ namespace Controle_Imob_Clientes
             (Configuration.GetConnectionString("ImobClienteConnection")));
             services.AddControllersWithViews();
 
-            services.AddIdentity<UsuarioDaAplicacao, IdentityRole>().AddEntityFrameworkStores<ImobClienteContext>().AddDefaultTokenProviders();
+            services.AddIdentity<UsuarioDaAplicacao, IdentityRole>()
+            .AddEntityFrameworkStores<ImobClienteContext>().AddDefaultTokenProviders();
 
             services.ConfigureApplicationCookie(options =>
             {
